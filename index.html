@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Changer</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <main>
+        <header>
+            <img src="./assets/logo.png" alt="Logo" class="logo">
+            <ul class="menu">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+            <div class="btns">
+                <button id="darkLight">
+                    <i class="fas fa-sun"></i>
+                </button>
+                <div class="themeColCont">
+                    <button id="currentColor"></button>
+                    <div class="options">
+                        <p>Chose a color :</p>
+                        <div class="btns">
+                            <button class="colors" id="color1"></button>
+                            <button class="colors" id="color2"></button>
+                            <button class="colors" id="color3"></button>
+                            <button class="colors" id="color4"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="left">
+                <h4>Creativity & design</h4>
+                <h1><span class="brand">ONDESIGN,</span> </h1>
+                <h2>Welcome !</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus quae mollitia earum quibusdam
+                    dolores temporibus quis voluptatum, laborum quo iste!</p>
+            </div>
+            <div class="right">
+                <div class="card">
+                    <i class="fas fa-cubes"></i>
+                    <h3>3D Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, nemo.</p>
+                    <button class="callToAction">Explore <i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

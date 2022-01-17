@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --currentColor: 255, 157, 0;
+    --color1: 255, 157, 0;
+    --color2: 255, 0, 191;
+    --color3: 0, 119, 255;
+    --color4: 98, 0, 255;
+
+    --dark: rgb(255, 255, 255);
+
+    --textColors: rgb(10, 0, 122);
+    --white: white;
+}
+
+:root.dark {
+    --dark: rgb(0, 0, 0);
+    --textColors: rgb(209, 209, 209);
+    --white: rgb(0, 0, 0);
+}
+
+body {
+    font-family: sans-serif;
+    background: var(--dark);
+}
+
+main {
+    background: rgba(var(--currentColor), .1);
+    backdrop-filter: opacity(20%);
+    -webkit-backdrop-filter: opacity(20%);
+    height: 100vh;
+}
+
+header {
+    height: 6rem;
+    background: rgba(var(--currentColor), 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+    width: 50px;
+}
+
+.menu {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin: 0 .5rem;
+}
+
+li.active a,
+li:hover a {
+    border-bottom: 2px solid var(--white);
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: rgba(0, 0, 0, 0.6);
+    padding: .8rem .5rem;
+}
+
+.btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.themeColCont {
+    display: flex;
+}
+
+.themeColCont {
+    position: relative;
+}
+
+.options {
+    position: absolute;
+    right: 0;
+    top: 150%;
+    background: rgb(0, 132, 255);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.425);
+    display: none;
+}
+
+.options button {
+    box-shadow: none;
+}
+
+.options.active {
+    display: block;
+}
+
+.options p {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.colors {
+    width: 28px;
+    height: 28px;
+    border: 2px solid rgb(236, 236, 236);
+    border-radius: 50%;
+}
+
+#color1 {
+    background: rgb(var(--color1), 1);
+}
+
+#color2 {
+    background: rgb(var(--color2), 1);
+}
+
+#color3 {
+    background: rgb(var(--color3), 1);
+}
+
+#color4 {
+    background: rgb(var(--color4), 1);
+}
+
+button {
+    cursor: pointer;
+    box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.425);
+    color: white;
+}
+
+button:hover {
+    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.425);
+}
+
+#currentColor {
+    background: rgb(var(--currentColor), 1);
+    width: 28px;
+    height: 28px;
+    border: 2px solid rgb(236, 236, 236);
+    border-radius: 50%;
+}
+
+#darkLight {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid rgb(236, 236, 236);
+    background: rgb(168, 168, 168);
+}
+
+.content {
+    display: flex;
+    height: calc(100vh - 6rem);
+    align-items: center;
+    justify-content: space-around;
+}
+
+h4 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: rgb(var(--currentColor), 1);
+    letter-spacing: 6px;
+}
+
+h2 {
+    color: var(--textColors);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 6px;
+}
+
+
+p,
+h4 {
+    color: rgb(105, 105, 105);
+    max-width: 30rem;
+    line-height: 1.5;
+}
+
+.card {
+    background: rgb(var(--currentColor), .2);
+    width: 25rem;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 2px 2px 100px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgb(var(--currentColor), .4);
+}
+
+.card .fa-cubes {
+    font-size: 5rem;
+    color: var(--textColors);
+    margin-bottom: 2.5rem;
+}
+
+.card h3 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--textColors);
+    margin-bottom: 2rem;
+}
+
+.card p {
+    margin-bottom: 2rem;
+}
+
+.callToAction {
+    align-self: start;
+    background: var(--white);
+    color: var(--textColors);
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border: none;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.callToAction:hover {
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
+}
